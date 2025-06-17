@@ -1,5 +1,6 @@
 package br.com.educacaocrescer.educacaocrescer
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,16 @@ class BoasVindasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        binding.btnProfessor.setOnClickListener {
+            startActivity(
+                Intent(this,LoginProfessorActivity::class.java)
+            )
+        }
+        binding.btnResponsavel.setOnClickListener {
+            startActivity(
+                Intent(this,LoginResponsavelActivity::class.java)
+            )
+        }
 
     }
 }

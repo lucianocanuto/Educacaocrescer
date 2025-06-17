@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EducacaoCrescer"
         tools:targetApi="31">
         <activity
+            android:name=".LoginResponsavelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginProfessorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
