@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -33,16 +34,24 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
+
+    implementation ("com.google.firebase:firebase-auth:22.3.0")
+    implementation ("com.google.firebase:firebase-firestore:24.10.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    apply(plugin = "com.google.gms.google-services")
 }
