@@ -44,6 +44,29 @@ class MainActivity : AppCompatActivity() {
                 .setNegativeButton("Cancelar", null)
                 .show()
         }
+        binding.btnCadastrarCrianca.setOnClickListener {
+            val input = EditText(this)
+            input.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+
+            AlertDialog.Builder(this)
+                .setTitle("Autenticação necessária")
+                .setMessage("Digite a senha da diretora para continuar:")
+                .setView(input)
+                .setPositiveButton("OK") { _, _ ->
+                    val senhaDigitada = input.text.toString()
+                    val senhaDiretora = "admin123" // Você pode mover isso para o Firebase futuramente
+
+                    if (senhaDigitada == senhaDiretora) {
+                        val intent = Intent(this, CadastroCriancaActivity::class.java)
+                        startActivity(intent)
+                    } else {
+                        Toast.makeText(this, "Senha incorreta!", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                .setNegativeButton("Cancelar", null)
+                .show()
+        }
+
 
 
     }
