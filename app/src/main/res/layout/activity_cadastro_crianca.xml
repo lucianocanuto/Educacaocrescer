@@ -9,7 +9,7 @@
     tools:context=".CadastroCriancaActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/profileImage"
+        android:id="@+id/imgFotoCrianca"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="32dp"
@@ -28,8 +28,8 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/primaria_verde_menta"
-        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
-        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFotoCrianca"
+        app:layout_constraintStart_toStartOf="@+id/imgFotoCrianca"
         app:srcCompat="@drawable/ic_photo_24" />
 
     <ImageButton
@@ -37,8 +37,8 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:backgroundTint="@color/primaria_verde_menta"
-        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
-        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFotoCrianca"
+        app:layout_constraintEnd_toEndOf="@+id/imgFotoCrianca"
         app:srcCompat="@drawable/ic_photo_alternate_24" />
 
 
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage">
+        app:layout_constraintTop_toBottomOf="@+id/imgFotoCrianca">
 
 
         <!-- Nome -->
