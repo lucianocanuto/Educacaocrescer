@@ -85,15 +85,13 @@
             android:inputType="textPersonName" />
 
         <!-- Data de nascimento -->
-        <EditText
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/edtDataNascimento"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="12dp"
-            android:focusable="false"
-            android:fontFamily="@font/comic_neue_bold"
-            android:hint="Data de Nascimento"
-            android:inputType="date" />
+            android:layout_height="wrap_content"
+            android:hint="Data de nascimento"
+            android:inputType="date"
+            app:mask="##/##/####" />
 
         <!-- Turma -->
         <Spinner
@@ -131,15 +129,15 @@
             android:hint="Nome da Mãe"
             android:inputType="textPersonName" />
 
-        <!-- Telefone Emergência -->
-        <EditText
+        <!-- Telefone -->
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/edtTelefoneEmergencia"
             android:layout_width="match_parent"
-            android:fontFamily="@font/comic_neue_bold"
-            android:layout_height="48dp"
-            android:layout_marginTop="12dp"
-            android:hint="Telefone de Emergência"
-            android:inputType="phone" />
+            android:layout_height="wrap_content"
+
+            android:hint="Telefone de emergência"
+            android:inputType="phone"
+            app:mask="(##) # ####-####" />
 
 
 
