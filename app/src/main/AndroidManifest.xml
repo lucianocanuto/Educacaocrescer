@@ -18,6 +18,12 @@
         android:theme="@style/Theme.EducacaoCrescer"
         tools:targetApi="31">
         <activity
+            android:name=".BoasVindasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaCriancasActivity"
+            android:exported="false" />
+        <activity
             android:name=".CadastroCriancaActivity"
             android:exported="false" />
         <activity
@@ -33,7 +39,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".BoasVindasActivity"
+            android:name=".DetalhesCriancaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624875178986",
+    "project_id": "agenda-escolar-crescer",
+    "storage_bucket": "agenda-escolar-crescer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624875178986:android:e807c9be794cf34f81c093",
+        "android_client_info": {
+          "package_name": "br.com.educacaocrescer.educacaocrescer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9uRMPZx2nM3JxabywCaAHUVdFTu6pwyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
